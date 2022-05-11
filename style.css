@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -22,6 +23,7 @@ ul {
 
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -118,10 +120,11 @@ section {
 }
 
 .row .col {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
 
 .info .row {
     margin-top: 50px;
@@ -144,9 +147,11 @@ p {
 
 video {
     position: relative;
-    width: 100%;
+    width: 80%;
     top: 0;
     height: auto;
+    display: block;
+    margin: auto;
 }
 /* for mobile device */
 
@@ -180,6 +185,12 @@ video {
     }
     .row {
         flex-direction: column;
+        position: relative;
+        width: 80%;
+        top: 0;
+        height: auto;
+        display: block;
+        margin: auto;
     }
     .row .col {
         margin: 20px auto;
