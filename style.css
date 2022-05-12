@@ -153,6 +153,21 @@ video {
     display: block;
     margin: auto;
 }
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0; 
+    background: #171717;
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
 /* for mobile device */
 
 @media only screen and (max-width:850px){
