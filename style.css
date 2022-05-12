@@ -151,7 +151,7 @@ video {
     top: 0;
     height: auto;
     display: block;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .footer {
