@@ -156,7 +156,7 @@ video {
 .footer {
     width: 100%;
     min-height: 100px;
-    padding: 20px 80px;
+    padding: 10px 80px;
     margin: 0; 
     background: #171717;
     text-align: center;
@@ -167,6 +167,19 @@ video {
     margin: 20px auto;
     padding: 20px auto;
 }
+
+.footer img {
+    width: 100px;
+}
+
+/* .footer img {
+    margin: -100px;
+    margin-left: -20px;
+    width: 100px;
+    height: 100px;
+    float: left;
+} */
+
 /* for mobile device */
 
 @media only screen and (max-width:850px){
@@ -209,7 +222,7 @@ video {
     .row .col {
         margin: 20px auto;
     }
-    .col image {
+    .col img {
         max-width: 90%;
     }
     .footer {
