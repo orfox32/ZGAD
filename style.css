@@ -213,4 +213,7 @@ video {
     .col image {
         max-width: 90%;
     }
+    .footer {
+        padding: 10px;
+    }
 }
