@@ -26,6 +26,9 @@ body, html {
 }
 
 /* Navbar */
+/*.primary-icon {
+    height: 40px;
+}*/
 
 .navbar {
     position: absolute;
@@ -38,6 +41,14 @@ body, html {
     color: whitesmoke;
 }
 
+.logo {
+    background-image: linear-gradient(90deg, rgb(0, 110, 255), rgb(247, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 3px rgb(153, 1, 255), 0 0 25px rgb(0, 132, 255), 0 0 5px rgb(0, 111, 139);
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -46,6 +57,8 @@ body, html {
 .nav-links li {
     margin: 0 30px;
 }
+
+/* header */
 
 header {
     width: 100vw;
@@ -230,7 +243,7 @@ video {
         padding: 10px;
     }
     .scrollTop {
-	padding: 10px;
+        padding: 10px;
     }
 }
 
