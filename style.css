@@ -271,3 +271,24 @@ li:hover {
 	animation-duration: 2s;
 	animation-play-state: pause;
 }
+
+/* scroll to top */
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #ad03fc;
+    color: whitesmoke;
+    border-radius: 5px;
+    border-radius: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollTop:hover { 
+    background: whitesmoke;
+    color: #ad03fc;
+    box-shadow: 2px 2px 5px #00000056;
+}
