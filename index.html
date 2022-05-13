@@ -113,7 +113,8 @@
             <p>Copyright © 2022 Puffer Void</p>
             
         </section>
-        
+
+        <div onclick="scrolltoTop()" class="scrollTop"><i class="fas fa-angle-double-up"> Top</i></div>    
 
         <script>
             const menuBtn = document.querySelector('.menu-btn')
@@ -122,6 +123,12 @@
             menuBtn.addEventListener('click', () => {
                 navlinks.classList.toggle('mobile-menu')
             })
+        </script>
+
+        <script>
+            function scrolltoTop(){
+                window.scrollTo(0, 0);
+            }
         </script>
     </body>
 </html>
