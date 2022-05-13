@@ -276,10 +276,10 @@ li:hover {
 	animation-name: discord-c;
 	animation-duration: 2s;
 	animation-play-state: pause;
-    	height:70px;
+    height:70px;
 	width:250px;
-	border-radius: 25px;
-    	box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 25px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .discord:hover {
