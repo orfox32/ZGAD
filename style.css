@@ -50,8 +50,9 @@ body, html {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('./images/zgad full.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('./images/zgad full.jpg');
     background-position: bottom;
+    background-color: rgba(0,0,0,0.25);
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -78,7 +79,7 @@ header {
 
 .header-content h1 {
     font-size: 7vmin;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -241,4 +242,32 @@ video {
 li:hover {
     color: #ad03fc;
     cursor: pointer;
+}
+
+/* discord iframe */
+
+
+@keyframes discord {
+	0% {height:70px; width:250px;}
+	 100% {height:300px;width:350px;}
+}
+@keyframes discord-c {
+	0% {height:300px;width:350px;}
+    100% {height:70px; width:250px;}
+}
+
+.discord {
+	animation-name: discord-c;
+	animation-duration: 2s;
+	animation-play-state: pause;
+    height:70px;
+	width:250px;
+}
+
+.discord:hover {
+	height:300px;
+	width:350px;
+	animation-name: discord;
+	animation-duration: 2s;
+	animation-play-state: pause;
 }
