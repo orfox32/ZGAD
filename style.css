@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
-
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,6 @@ body, html {
     margin-right: 10px;
     margin-bottom: -20px;
 }
-
 
 .nav-links {
     display: flex;
@@ -167,31 +165,96 @@ p {
 
 video {
     position: relative;
-    width: 80%;
+    width: 60%;
     top: 0;
     height: auto;
     display: block;
     margin: 20px auto;
+    margin-bottom: 120px;
 }
 
-.footer {
+footer {
+    position: relative;
     width: 100%;
     min-height: 100px;
-    padding: 10px 80px;
-    margin: 0; 
+    padding: 20px -50px;
+    display: flex;
     background: #171717;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer p {
+footer p {
     color: whitesmoke;
     margin: 20px auto;
     padding: 20px auto;
 }
 
-.footer img {
-    width: 100px;
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('./images/blackwave.png');
+    background-size: 1000px 100px;
 }
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_2 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+/*footer img {
+    width: 100px;
+}*/
+
 
 /* .footer img {
     margin: -100px;
@@ -246,7 +309,7 @@ video {
     .col img {
         max-width: 90%;
     }
-    .footer {
+    footer {
         padding: 10px;
     }
     .scrollTop {
