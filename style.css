@@ -229,6 +229,9 @@ video {
     .footer {
         padding: 10px;
     }
+    .scrollTop {
+	padding: 10px;
+    }
 }
 
 /* Animation */
