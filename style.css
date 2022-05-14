@@ -22,6 +22,7 @@ ul {
 body, html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #171717;
 }
 
 /* Navbar */
@@ -175,21 +176,143 @@ header {
     font-size: 18px;
     margin-bottom: 45px;
 }
+
+/* PROFILE CARDS */
+
+.card-wrap {
+    padding: 0 115px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    position: relative;
+    width: 320px;
+    height: 360px;
+    text-align: center;
+    margin: 40px 20px 0;
+}
+
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    transition: transform 1s;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    padding: 50px;
+}
+
+.front {
+    background-color: #fff;
+}
+
+.back {
+    padding: 40px 20px;
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.text {
+    margin-top: 30px;
+    color: #171717;
+}
+
+.front img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700%;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #171717;
+}
+
+.cards .front p {
+    margin: 10px 0;
+}
+
+.cards:hover .card-inner {
+    transform: rotateY(180deg);
+    transition: transform .5s;
+}
+
+.cards .back p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.socials a {
+    display: inline-block;
+    color: #3686ff;
+    border: 1px solid #171717;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    margin: 20px 5px 0;
+    transition: all ease 0.5s ;
+}
+
+.socials a:hover{
+    background-color: #3686ff;
+    color: #171717;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid #3686ff!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: #3686ff!important;
+}
+
 /* stay safe */
 
-/* section {
+section {
     width: 80%;
-    margin: 80px auto;
+    margin: 40px auto;
     margin-top: 0px;
 }
 
 .title {
     text-align: center;
     font-size: 4vmin;
-    color: #171717;
-}
+    color: whitesmoke;
+} 
 
-.row {
+/*.row {
     display: flex;
     align-items: center;
     width: 100%;
@@ -221,21 +344,13 @@ p {
     margin-top: 30px;
 } */
 
-/*video {
-    position: relative;
-    width: 60%;
-    top: 0;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    margin-bottom: 120px;
-} */
 
 footer {
     position: relative;
     width: 100%;
     min-height: 100px;
     padding: 20px -50px;
+    margin-top: 150px;
     display: flex;
     background: #3686ff;
     justify-content: center;
@@ -385,6 +500,9 @@ footer .wave#wave4 {
         font-size: 30px;
         margin-bottom: 25px;
     }
+    .card-wrap {
+        padding: 30px;
+     }
 }
 
 /* Animation */
@@ -450,3 +568,4 @@ li:hover {
     color: #ad03fc;
     box-shadow: 2px 2px 5px #00000056;
 }
+
