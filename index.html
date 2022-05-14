@@ -36,9 +36,12 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
         <!-- Script -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     </head>
     <body>
         <!--navbar-->
@@ -79,66 +82,122 @@
 
         <!-- stay safe -->
 
-        <!-- <section class="info">
+         <section class="info">
             <div class="title" data-aos="fade-down" data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000">
-                <h1>MGA BALIW SA KANTO</h1>
+                <h1>TEAMS</h1>
                 <div class="line"></div>
             </div>
-            <div class="row">
-                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="2000">
-                    <img src="./images/dane stickers.png" alt="">
-                    <h4>AEON</h4>
-                    <p>Maliit</p>
-                    <a href="#" class="ctn">Learn More</a>
-                </div>
-                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="3000">
-                    <img src="./images/void stickers.png" alt="">
-                    <h4>VOID</h4>
-                    <p>Japanese na hilaw</p>
-                    <a href="#" class="ctn">Learn More</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="2000">
-                    <img src="./images/cryptoping sticker.png" alt="">
-                    <h4>RED</h4>
-                    <p>Malaki ano</p>
-                    <a href="#" class="ctn">Learn More</a>
-                </div>
-                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="3000">
-                    <img src="./images/holabels stickers.png" alt="">
-                    <h4>OBS</h4>
-                    <p>Baliw na Baliw kay j</p>
-                    <a href="#" class="ctn">Learn More</a>
-                </div>
-            </div> 
-        </section> -->
+        </section> 
 
-        <!-- <div class="title" data-aos="fade-down" data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000">
-            <h2>VIDEO PRESENTATION</h2>
-            <div class="line"></div>
-        </div>
-        <div class="divvideo" data-aos="fade-up"
+        <div class="card-wrap owl-carousel" data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000">
-            <video width="1280" height="720" controls>
-                <source src="./video/test.mp4" Type="video/mp4">
-            </video>
-        </div> -->
-        
+            <div class="cards">
+                <div class="card-inner">
+                    <div class="card-face front">
+                        <img src="./images/profile cards/orfox.jpg" alt="">
+                        <div class="text">
+                            <h4>Orfox</h4>
+                            <p>Clown Manager</p>
+                        </div>
+                    </div>
+                    <div class="card-face back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-inner">
+                    <div class="card-face front">
+                        <img src="./images/profile cards/dane stickers.png" alt="">
+                        <div class="text">
+                            <h4>Dane</h4>
+                            <p>Clown CEO</p>
+                        </div>
+                    </div>
+                    <div class="card-face back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-inner">
+                    <div class="card-face front">
+                        <img src="./images/profile cards/puffer void.jpg" alt="">
+                        <div class="text">
+                            <h4>Puffer Void</h4>
+                            <p>Cuyagbols</p>
+                        </div>
+                    </div>
+                    <div class="card-face back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-inner">
+                    <div class="card-face front">
+                        <img src="./images/profile cards/holabels stickers.png" alt="">
+                        <div class="text">
+                            <h4>Obs</h4>
+                            <p>Mahal na mahal si J</p>
+                        </div>
+                    </div>
+                    <div class="card-face back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-inner">
+                    <div class="card-face front">
+                        <img src="./images/profile cards/cryptoping sticker.png" alt="">
+                        <div class="text">
+                            <h4>Cryptoping</h4>
+                            <p>May kwento akiskis</p>
+                        </div>
+                    </div>
+                    <div class="card-face back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
         <footer>
             <div class="waves">
                 <div class="wave" id="wave1"></div>
@@ -174,5 +233,69 @@
         <script>
             AOS.init();
         </script>
+
+        <!-- Script For Cards-->
+        <script>
+            $('.card-wrap').owlCarousel({
+                margin: 10,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHover: true,
+                responsive: {
+                    0:{
+                        items: 1,
+                        nav: false
+                    },
+                    600:{
+                        items: 2,
+                        nav: false
+                    },
+                    1000:{
+                        items: 3,
+                        nav: false
+                    }
+                }
+            })
+        </script>
     </body>
 </html>
+
+<!-- reserve -->
+
+ <!-- <div class="row">
+                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000">
+                    <img src="./images/dane stickers.png" alt="">
+                    <h4>AEON</h4>
+                    <p>Maliit</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="3000">
+                    <img src="./images/void stickers.png" alt="">
+                    <h4>VOID</h4>
+                    <p>Japanese na hilaw</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000">
+                    <img src="./images/cryptoping sticker.png" alt="">
+                    <h4>RED</h4>
+                    <p>Malaki ano</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="3000">
+                    <img src="./images/holabels stickers.png" alt="">
+                    <h4>OBS</h4>
+                    <p>Baliw na Baliw kay j</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div> -->
