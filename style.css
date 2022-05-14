@@ -184,6 +184,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
 }
 
 .cards {
@@ -256,7 +257,7 @@ p {
 }
 
 .cards .back p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 
