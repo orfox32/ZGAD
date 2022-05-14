@@ -191,8 +191,10 @@ header {
     position: relative;
     width: 320px;
     height: 360px;
+    display: flex;
     text-align: center;
-    margin: 40px 20px 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .card-inner {
