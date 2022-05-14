@@ -40,6 +40,13 @@ body, html {
     color: whitesmoke;
 }
 
+span {
+    background-image: linear-gradient(70deg, rgb(0, 110, 255), rgb(247, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .logo {
     background-image: linear-gradient(90deg, rgb(0, 110, 255), rgb(247, 0, 255));
     -webkit-background-clip: text;
