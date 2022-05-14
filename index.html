@@ -35,6 +35,10 @@
             <!--CSS Link-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!--navbar-->
@@ -63,8 +67,10 @@
 
         <section class="about">
             <div class="aboutmain">
-                <img src="./images/logo.png" alt="">
-                <div class="abouttext">
+                <img src="./images/logo.png" alt="" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="500">
+                <div class="abouttext" data-aos="fade-left" data-aos="fade-right"  data-aos-offset="300" data-aos-delay="100"
+                data-aos-duration="1000">
                     <h2>About ZGAD</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
@@ -74,18 +80,24 @@
         <!-- stay safe -->
 
         <section class="info">
-            <div class="title">
+            <div class="title" data-aos="fade-down" data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000">
                 <h1>MGA BALIW SA KANTO</h1>
                 <div class="line"></div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000">
                     <img src="./images/dane stickers.png" alt="">
                     <h4>AEON</h4>
                     <p>Maliit</p>
                     <a href="#" class="ctn">Learn More</a>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="3000">
                     <img src="./images/void stickers.png" alt="">
                     <h4>VOID</h4>
                     <p>Japanese na hilaw</p>
@@ -93,13 +105,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="zoom-in-right" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000">
                     <img src="./images/cryptoping sticker.png" alt="">
                     <h4>RED</h4>
                     <p>Malaki ano</p>
                     <a href="#" class="ctn">Learn More</a>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="zoom-in-left" data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="3000">
                     <img src="./images/holabels stickers.png" alt="">
                     <h4>OBS</h4>
                     <p>Baliw na Baliw kay j</p>
@@ -108,11 +124,16 @@
             </div>
         </section>
 
-        <div class="title">
+        <div class="title" data-aos="fade-down" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
             <h2>VIDEO PRESENTATION</h2>
             <div class="line"></div>
         </div>
-        <div class="divvideo">
+        <div class="divvideo" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
             <video width="1280" height="720" controls>
                 <source src="./video/test.mp4" Type="video/mp4">
             </video>
@@ -130,8 +151,16 @@
             <p>Copyright © 2022 Puffer Void</p>
         </footer>
 
+        <!-- Script for top scrolling-->
         <div onclick="scrolltoTop()" class="scrollTop"><i class="fas fa-angle-double-up"> Top</i></div>    
+        
+        <script>
+            function scrolltoTop(){
+                window.scrollTo(0, 0);
+            }
+        </script>
 
+        <!-- Script for Navbar animation-->
         <script>
             const menuBtn = document.querySelector('.menu-btn')
             const navlinks = document.querySelector('.nav-links')
@@ -141,10 +170,9 @@
             })
         </script>
 
+        <!-- Script for element animation-->
         <script>
-            function scrolltoTop(){
-                window.scrollTo(0, 0);
-            }
+            AOS.init();
         </script>
     </body>
 </html>
