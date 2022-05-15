@@ -470,21 +470,6 @@ footer .wave#wave4 {
     .nav-links li {
         margin: 30px auto;
     }
-    .row {
-        flex-direction: column;
-        position: relative;
-        width: 80%;
-        top: 0;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    .row .col {
-        margin: 20px auto;
-    }
-    .col img {
-        max-width: 90%;
-    }
     footer {
         padding: 10px;
     }
@@ -506,6 +491,71 @@ footer .wave#wave4 {
     .card-wrap {
         padding: 30px 10px;
      }
+}
+
+/* small devices */
+
+@media screen and (max-width: 320px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+    .about .aboutmain img {
+        margin-bottom: 100px;
+    }
+    .abouttext h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .card-wrap {
+        padding: 10px 0px;
+    }
+    .owl-dots {
+        margin-bottom: 150px;
+    }
+}
+
+/* larger devices */
+@media screen and (min-width: 1024px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+    .about .aboutmain img {
+        margin-bottom: 100px;
+    }
+    .abouttext h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .card-wrap {
+        padding: 20px 10px;
+    }
+    .owl-dots {
+        margin-bottom: 150px;
+    }
+}
+
+/* even larger devices */
+@media screen and (min-width: 1366px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+    .about .aboutmain img {
+        margin-bottom: 100px;
+    }
+    .abouttext h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    
+    .owl-dots {
+        margin-bottom: 30px;
+    }
 }
 
 /* Animation */
@@ -571,3 +621,4 @@ li:hover {
     color: #ad03fc;
     box-shadow: 2px 2px 5px #00000056;
 }
+
