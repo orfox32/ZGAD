@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>404 Page not found</title>
+    <!-- add icon link -->
+    <link rel="icon" href="./images/logo1.png" type="image/x-icon">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="404/styles.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="content">
+            <img src="../ZGAD-main/404/404 image/404-animation-cat.gif" alt="">
+            <h2><span>404</span></h2>
+            <h4>Page not found!</h4>
+            <p>The page you are looking for doesn't exist.</p>
+            <a href="#https://zeegod.com/">Go Back</a>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript">
+        const container = document.getElementById('container');
+       window.onmousemove = function (e) {
+           var x = e.clientX/5,
+               y = e.clientY/5;
+           container.style.backgroundPositionX = x + 'px';
+           container.style.backgroundPositionY = y + 'px';
+       }
+   </script>
+
+</body>
+
+</html>
