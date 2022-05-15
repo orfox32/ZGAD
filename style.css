@@ -658,7 +658,7 @@ li:hover {
   }
 
   .disappear {
-      animation: vanish 3s forwards;
+      animation: vanish 6s forwards;
   }
 
   @keyframes vanish {
@@ -667,4 +667,3 @@ li:hover {
           visibility: hidden;
       }
   }
-
