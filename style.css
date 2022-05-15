@@ -26,9 +26,6 @@ body, html {
 }
 
 /* Navbar */
-/*.primary-icon {
-    height: 40px;
-}*/
 
 .navbar {
     position: absolute;
@@ -111,9 +108,28 @@ header {
 
 .ctn {
     padding: 8px 15px;
-    background: #ad03fc;
+    background: #8c03fc;
     border-radius: 30px;
     color: whitesmoke;
+    transition: 0.3s ease;
+}
+
+.discord-button {
+    padding: 8px 15px;
+    background-color: #8c03fc;
+    border-radius: 30px;
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+
+.discord-button:hover {
+    cursor: pointer;
+    background: whitesmoke;
+    color: #8c03fc;
+    box-shadow: 0px 0px 5px #8c03fc,
+                0px 0px 20px #8c03fc,
+                0px 0px 60px #8c03fc,
+                0px 0px 150px whitesmoke;
 }
 
 .menu-btn {
@@ -315,39 +331,6 @@ section {
     color: whitesmoke;
 } 
 
-/*.row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.row .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
-.info .row {
-    margin-top: 50px;
-}
-
-h4 {
-    font-size: 3vmin;
-    color: #171717;
-    margin: 20px auto;
-}
-
-p {
-    color: #332d2d;
-    padding: 0px 40px;
-}
-
-.info .ctn {
-    margin-top: 30px;
-} */
-
-
 footer {
     position: relative;
     width: 100%;
@@ -427,19 +410,6 @@ footer .wave#wave4 {
     }
 }
 
-/*footer img {
-    width: 100px;
-}*/
-
-
-/* .footer img {
-    margin: -100px;
-    margin-left: -20px;
-    width: 100px;
-    height: 100px;
-    float: left;
-} */
-
 /* for mobile device */
 
 @media only screen and (max-width:1180px){
@@ -485,7 +455,7 @@ footer .wave#wave4 {
         margin-bottom: 35px;
     }
     .abouttext h2 {
-        font-size: 30px;
+        font-size: 50px;
         margin-bottom: 25px;
     }
     .card-wrap {
@@ -505,7 +475,7 @@ footer .wave#wave4 {
         margin-bottom: 100px;
     }
     .abouttext h2 {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 25px;
     }
     .card-wrap {
@@ -527,7 +497,7 @@ footer .wave#wave4 {
         margin-bottom: 100px;
     }
     .abouttext h2 {
-        font-size: 30px;
+        font-size: 50px;
         margin-bottom: 25px;
     }
     .card-wrap {
@@ -549,14 +519,20 @@ footer .wave#wave4 {
         margin-bottom: 100px;
     }
     .abouttext h2 {
-        font-size: 30px;
+        font-size: 70px;
         margin-bottom: 25px;
     }
-    
     .owl-dots {
         margin-bottom: 30px;
     }
+    .card-wrap {
+        padding: 20px 10px;
+    }
+    .owl-dots {
+        margin-bottom: 150px;
+    }
 }
+
 
 /* Animation */
 
@@ -606,19 +582,43 @@ li:hover {
 .scrollTop {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 20px;
     padding: 10px 15px;
-    background-color: #ad03fc;
+    background-color: #8c03fc;
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 50px;
     border-radius: 1px solid #171717;
     cursor: pointer;
-    transition: all 0.5s ease 0s;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    visibility: hidden;
+    z-index: 1000;
 }
 
 .scrollTop:hover { 
     background: whitesmoke;
-    color: #ad03fc;
-    box-shadow: 2px 2px 5px #00000056;
+    color: #8c03fc;
+    box-shadow: 0px 0px 5px #8c03fc,
+                0px 0px 20px #8c03fc,
+                0px 0px 60px #8c03fc,
+                0px 0px 150px whitesmoke;
 }
 
+@keyframes movebtn {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
