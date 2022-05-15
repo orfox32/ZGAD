@@ -658,7 +658,7 @@ li:hover {
   }
 
   .disappear {
-      animation: vanish 6s forwards;
+      animation: vanish 4s forwards;
   }
 
   @keyframes vanish {
