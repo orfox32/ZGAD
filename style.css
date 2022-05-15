@@ -425,7 +425,7 @@ footer .wave#wave4 {
 
 /* for mobile device */
 
-@media only screen and (max-width:1180px){
+@media only screen and (max-width:850px){
     .menu-btn {
         display: block;
     }
@@ -443,7 +443,7 @@ footer .wave#wave4 {
         height: 100vh;
         justify-content: center;
         background: #171717;
-        margin-top: -3000px;
+        margin-top: -900px;
         transition: all 0.5s ease;
     }
     .mobile-menu {
