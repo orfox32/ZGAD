@@ -4,3 +4,7 @@ const menuBtn = document.querySelector('.menu-btn')
         menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-menu')
         })
+
+        $(".nav-links").click(function(){
+            menuBtn.click();
+          })
