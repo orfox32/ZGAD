@@ -15,5 +15,5 @@ $('body, html').css({
         overflow: 'auto'
       });
     });
-  }, 10000);
+  }, 6000);
 
