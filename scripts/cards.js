@@ -16,6 +16,10 @@ $('.card-wrap').owlCarousel({
         1000: {
             items: 3,
             nav: false
-        }
+        },
+        1600: {
+            items: 4,
+            nav: false
+        },
     }
 })
