@@ -7,12 +7,12 @@ function vanish () {
 }
 
 $('body, html').css({
-    overflow: 'hidden'
+    overflowY: 'hidden'
   });
   setTimeout(function(){
     $('.preloader').fadeOut('slow', function(){
       $('body, html').css({
-        overflow: 'auto'
+        overflowY: 'auto'
       });
     });
   }, 2000);
