@@ -163,7 +163,7 @@ header {
     box-sizing: border-box;
     /*padding: 150px 0px;*/
     display: flex;
-    background-image: linear-gradient(rgba(23,23,23,.6), rgba(23,23,23,.6)), url('./images/Background/Polygon.png');
+    background-image: linear-gradient(rgba(23,23,23,.6), rgba(23,23,23,.6)), url('./images/background assets/Polygon.png');
     justify-content: center;
     background-color: #171717;
     align-items: center;
