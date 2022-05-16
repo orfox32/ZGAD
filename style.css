@@ -23,7 +23,7 @@ ul {
 body, html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: #171717;	
+    background-color: #171717;
     overflow-y: hidden;
 }
 
@@ -75,7 +75,7 @@ span {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('./images/zgad full.jpg');
+    background-image: linear-gradient(rgba(23,23,23,.6), rgba(23,23,23,.6)), url('./images/zgad full.jpg');
     background-position: bottom;
     background-color: rgba(0,0,0,0.25);
     background-size: cover;
@@ -163,6 +163,7 @@ header {
     box-sizing: border-box;
     /*padding: 150px 0px;*/
     display: flex;
+    background-image: linear-gradient(rgba(23,23,23,.6), rgba(23,23,23,.6)), url('./images/Background/Polygon.png');
     justify-content: center;
     background-color: #171717;
     align-items: center;
@@ -189,6 +190,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    z-index: 1000;
 }
 
 .abouttext h2 {
@@ -649,16 +651,16 @@ li:hover {
     z-index: 2000;
     height: 100vh;
     width: 100%;
-    bottom: 0;
-    right: 0;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     overflow: hidden;
-  }
+  }  
 
   .preloader lottie-player {
-      width: 300px;
-      height: 300px;
+    width: 300px;
+    height: 300px;
   }
 
   .disappear {
@@ -672,7 +674,7 @@ li:hover {
       }
   }
 
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
       width: 10px;
   }
 
@@ -684,3 +686,4 @@ li:hover {
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, #8c03fc);
   }
+
