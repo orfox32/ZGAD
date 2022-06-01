@@ -345,6 +345,7 @@ section {
 .title {
     text-align: center;
     font-size: 4vmin;
+    padding-top: 50px;
     color: whitesmoke;
 } 
 
