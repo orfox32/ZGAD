@@ -380,6 +380,7 @@ footer .social_icon li a {
     color: #fff;
     margin: 0 10px;
     display: inline-block;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -389,15 +390,17 @@ footer .menu li a {
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
-    opacity: 0.75;
 }
 
 footer .menu li a:hover {
-    opacity: 1;
+    cursor: pointer;
+    color: #8c03fc;
 }
 
 footer .social_icon li a:hover {
     transform: translateY(-10px);
+    cursor: pointer;
+    color: #8c03fc;
 }
 
 footer p {
