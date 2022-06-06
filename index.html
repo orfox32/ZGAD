@@ -40,13 +40,17 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    
+
     <!-- Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -67,7 +71,7 @@
         <div class="header-content">
             <h2><i class="fab fa-discord"> OUR DISCORD SERVER</i></h2>
             <div class="line"></div>
-            <iframe class="discord" title="popdiscord"src="https://discord.com/widget?id=631502282609131525&theme=dark"
+            <iframe class="discord" title="popdiscord" src="https://discord.com/widget?id=631502282609131525&theme=dark"
                 allowtransparency="true" frameborder="0"
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <h1>Zee God & Disciples</h1>
@@ -83,8 +87,8 @@
         </div>
     </section>
 
-    <section id="about" class="about" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
-    data-aos-duration="1000">
+    <section class="about" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000">
         <div class="aboutmain">
             <img src="./images/logo.png" alt="" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
                 data-aos-duration="500">
@@ -100,7 +104,7 @@
         </div>
     </section>
 
-    <!-- stay safe -->
+    <!-- teams -->
 
     <section id="teams" class="info">
         <div class="title" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
@@ -257,11 +261,13 @@
     </div>
 
     <div class="preloader">
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tr1pjkop.json" background="#171717"  speed="1" loop  autoplay></lottie-player>
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tr1pjkop.json" background="#171717" speed="1"
+            loop autoplay></lottie-player>
     </div>
-    
+
+
     <!-- Footer -->
-    
+
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -269,8 +275,18 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <p>143 Balik ka na please, miss na kita, 6969, Philippines | Phone: 09061546969 | Email: puffervoid@gmail.com
-        </p>
+        <ul class="social_icon" >
+            <li><a href="https://www.facebook.com/ZeeGodDisciples" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://twitter.com/ZeeGodDisciplez" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://discord.gg/CMQsT9bU8V" target="_blank"><ion-icon name="logo-discord"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#teams">Teams</a></li>
+        </ul>
+        <!-- <p>143 Balik ka na please, miss na kita, 6969, Philippines | Phone: 09061546969 | Email: puffervoid@gmail.com
+        </p> -->
         <!--img src="./images/logo.png"-->
         <p>Copyright © 2022 Zee God & Disciples</p>
     </footer>
@@ -290,9 +306,9 @@
 
     <!-- Script For loader-->
     <script src="./scripts/loader.js"></script>
-    
-    <!-- Script For refresh-->
+
     <script src="./scripts/refresh.js"></script>
+    
 </body>
 
 </html>
