@@ -187,8 +187,8 @@ header {
     max-width: 95%;
     margin: 0 auto;
     display: flex;
-    transform: translateY(5vh);
     flex-wrap: wrap;
+    transform: translateY(5vh);
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
@@ -362,10 +362,50 @@ footer {
     flex-direction: column;
 }
 
+footer .social_icon, footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li, footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
 footer p {
     color: whitesmoke;
-    margin: 20px auto;
-    padding: 20px auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 footer .wave {
