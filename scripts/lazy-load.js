@@ -1,3 +1,5 @@
+/* image lazy loading */
+
 const load = document.querySelectorAll('img')
 
 const lazyLoad = loads => {
