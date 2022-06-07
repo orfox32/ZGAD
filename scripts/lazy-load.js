@@ -4,8 +4,7 @@ const lazyLoad = loads => {
     const intobs = new IntersectionObserver((entries, observer) => {
         
         entries.forEach(entry => {
-            console.log('❤')
-
+            
             if(entry.isIntersecting){
                 const img = entry.target;
                 const src = img.getAttribute('data-lazy')
