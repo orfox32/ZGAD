@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 $('.owl-carousel').each(function() {
    
   $(this).find('.owl-dot').each(function(index) {
@@ -6,4 +6,4 @@ $('.owl-carousel').each(function() {
     $(this).attr('aria-label', index + 1);
   });
 });
-})
+
