@@ -104,6 +104,7 @@ header {
 
 .header-content h2 {
     font-size: 4vmin;
+    font-family: 'Poppins', sans-serif;
 }
 
 .line {
@@ -217,7 +218,6 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
 }
 
 .cards {
