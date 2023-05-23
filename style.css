@@ -217,7 +217,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cards {
