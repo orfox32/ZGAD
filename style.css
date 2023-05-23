@@ -102,7 +102,7 @@ header {
     animation: transitionIn 8s;
 }
 
-.header-content h2 {
+#home .header-content h2 {
     font-size: 4vmin;
     font-family: 'Poppins', sans-serif;
 }
