@@ -96,15 +96,10 @@ header {
 }
 
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     color: whitesmoke;
     text-align: center;
     animation: transitionIn 8s;
-}
-
-#home .header-content h2 {
-    font-size: 4vmin;
-    font-family: 'Poppins', sans-serif;
 }
 
 .line {
