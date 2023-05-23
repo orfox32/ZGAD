@@ -14,12 +14,6 @@ ul {
     list-style: none;
 }
 
-.active {
-    color: #ad03fc;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 body, html {
     overflow-x: hidden;
     scroll-behavior: smooth;
